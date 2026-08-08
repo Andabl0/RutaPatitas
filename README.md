@@ -1,9 +1,9 @@
 # Patitas Unidas 🐾
 
 ### Elaborado por:
-Monserrath Muñoz Juarez 
-Alisson Arely Hernández Camargo
-Irving Josue Andablo Islas 
+### Monserrath Muñoz Juarez 
+### Alisson Arely Hernández Camargo
+### Irving Josue Andablo Islas 
 
 
 > *"Encuentra a tu mejor amigo"*
