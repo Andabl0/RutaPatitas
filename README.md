@@ -1,5 +1,11 @@
 # Patitas Unidas 🐾
 
+### Elaborado por:
+Monserrath Muñoz Juarez 
+Alisson Arely Hernández Camargo
+Irving Josue Andablo Islas 
+
+
 > *"Encuentra a tu mejor amigo"*
 
 Prototipo interactivo de una app que conecta personas que quieren adoptar con refugios y rescatistas. Nacida de la idea de que **adoptar no debería ser un trámite burocrático, sino el inicio de una historia**.
@@ -48,7 +54,6 @@ Bienvenida → Buscar → Enamorarse → Solicitar → Seguimiento → ¡Llegó 
 - Chat demo funcional (escribe, envía, ve burbujas propias/ajenas)
 - Likes en momentos (corazón que late)
 - Cancelar solicitud con animación + anuncio a screen readers
-- Todo en **vanilla JS** — cero dependencias, cero build, abre y corre
 
 ---
 
@@ -56,16 +61,13 @@ Bienvenida → Buscar → Enamorarse → Solicitar → Seguimiento → ¡Llegó 
 
 | Rol | Nombre | Qué hizo |
 |-----|--------|----------|
-| **Product & UX** | *Tu nombre* | Definición del flujo, arquitectura de información, criterios de adopción responsable |
-| **UI & Design System** | *Tu nombre* | Paleta, tipografía, componentes, estados, dark mode (preparado), iconografía |
-| **Frontend & Accesibilidad** | *Tu nombre* | HTML semántico, CSS custom properties, JS vanilla, testing WCAG 2.2 AA |
-| **Content & Microcopy** | *Tu nombre* | Textos con voz humana, mensajes de error que ayudan, empty states que abrazan |
-| **QA & Testing** | *Tu nombre* | Navegación teclado, lectores de pantalla (NVDA/VoiceOver), móvil, desktop, edge cases |
+| **Product & UX** | *Moserrath Muñoz Juarez, Irving Josue Andablo Islas, Alisson Arely Hernández Camargo* | Definición del flujo, arquitectura de información, criterios de adopción responsable |
+| **UI & Design System** | *Monserrath Muñoz Juarez, Alisson Arely Hernández Camargo* | Paleta, tipografía, componentes, estados, dark mode (preparado), iconografía |
+| **Frontend & Accesibilidad** | *Irving Josue Andablo Islas, Monserrath Muñoz Juarez, Alisson Arely Hernández Camargo* | HTML semántico, CSS custom properties, JS vanilla, testing WCAG 2.2 AA |
+| **QA & Testing** | *Irving Josue Andablo Islas* | Navegación teclado, lectores de pantalla (NVDA/VoiceOver), móvil, desktop, edge cases |
 
-> ¿Equipo de uno? Pon tu nombre en todas. ¿Equipo real? Reemplaza cada "*Tu nombre*" y presúmanlo.
 
 ---
-
 ## Cómo probarlo en 10 segundos
 
 ```bash
@@ -79,18 +81,6 @@ python -m http.server 8080
 ```
 
 Navega con **mouse, teclado o lector de pantalla**. Todo funciona.
-
----
-
-## Próximos pasos (cuando esto deje de ser prototipo)
-
-- [ ] Backend real (Node/Python/Go + DB)
-- [ ] Auth con JWT + refresh tokens
-- [ ] Push notifications (Service Workers)
-- [ ] Geolocalización real + Mapbox/Leaflet
-- [ ] Panel de refugio (gestión mascotas, solicitudes, visitas)
-- [ ] Tests E2E (Playwright) + CI/CD
-- [ ] Deploy (Vercel/Netlify/Cloudflare Pages)
 
 ---
 
