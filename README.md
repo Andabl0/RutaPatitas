@@ -1,54 +1,97 @@
-# Patitas Unidas — App de Adopción de Mascotas
+# Patitas Unidas 🐾
 
-Prototipo interactivo de alta fidelidad para una plataforma de adopción responsable de mascotas.
+> *"Encuentra a tu mejor amigo"*
 
-## Flujo principal (Adoptante)
+Prototipo interactivo de una app que conecta personas que quieren adoptar con refugios y rescatistas. Nacida de la idea de que **adoptar no debería ser un trámite burocrático, sino el inicio de una historia**.
+
+---
+
+## El recorrido del adoptante
 
 ```
-index.html → login/registro → buscar-mascotas.html → mascota-perfil.html
-    → solicitud-adopcion.html → detalle-adopcion.html → seguimiento-adopcion.html
-        → mi-mascota.html
+Bienvenida → Buscar → Enamorarse → Solicitar → Seguimiento → ¡Llegó a casa! → Bitácora
 ```
 
-## Pantallas
+| Pantalla | Qué pasa aquí |
+|----------|---------------|
+| `index.html` | Eliges: **"Quiero adoptar"** o **"Soy refugio/rescatista"** |
+| `buscar-mascotas.html` | Exploras perritos y gatitos con filtros por zona, raza, edad |
+| `mascota-perfil.html` | Ves su historia, fotos, personalidad, compatibilidad (niños, otros perros, gatos) |
+| `solicitud-adopcion.html` | Cuentas quién eres: tu casa, experiencia, por qué esa mascota |
+| `detalle-adopcion.html` | Mapa del refugio, estado de tu solicitud, próximos pasos |
+| `seguimiento-adopcion.html` | **Timeline visual** (visita → contrato → entrega) + **chat directo con el refugio** |
+| `confirmar-adopcion.html` | ¡Aprobada! Últimos detalles antes del gran día |
+| `mi-mascota.html` | Tu bitácora: fotos, anécdotas, hitos (primera caminata, primer "te quiero") |
+| `mis-solicitudes.html` | Bandeja con todas tus solicitudes y su estado |
+| `perfil.html` / `configuracion.html` | Tus datos, notificaciones, accesibilidad, guía de adopción responsable |
 
-| Archivo | Descripción |
-|---------|-------------|
-| `index.html` | Bienvenida y elección de rol (Adoptante / Refugio) |
-| `login.html` / `registro.html` | Autenticación |
-| `buscar-mascotas.html` | Listado con buscador y filtros |
-| `mascota-perfil.html` | Detalle de mascota (fotos, datos, compatibilidad) |
-| `solicitud-adopcion.html` | Formulario de adopción (vivienda, experiencia, motivos) |
-| `detalle-adopcion.html` | Seguimiento de solicitud + mapa del refugio |
-| `seguimiento-adopcion.html` | **Timeline de pasos**, chat con refugio, contacto |
-| `confirmar-adopcion.html` | Confirmación final + chat |
-| `mi-mascota.html` | Bitácora de momentos (fotos, recuerdos) |
-| `mis-solicitudes.html` | Bandeja de solicitudes con estados |
-| `perfil.html` / `configuracion.html` | Cuenta y ajustes (accesibilidad, notificaciones) |
-| `mapa-del-sitio.html` | Vista general de navegación |
+---
 
-## Tech Stack
+## Detrás de escena (lo que no se ve pero se siente)
 
-- **HTML5 semántico** + **CSS3** (Custom Properties, Grid/Flexbox)
-- **Vanilla JS** (interacciones: toggle password, validación accesible, chat demo, likes, anuncios ARIA)
-- **Fuentes**: Fredoka (display) + Work Sans (body) vía Google Fonts
-- **Iconografía**: SVG inline
+**Accesibilidad real (WCAG 2.2 AA)**
+- Contraste que pasa auditoría, no solo "se ve bien"
+- Navegas entero con teclado (Tab, Enter, Esc) — probado con lector de pantalla
+- Áreas táctiles de 44px mínimo (dedo gordo incluido)
+- `prefers-reduced-motion` respetado: si el usuario pide menos movimiento, la app obedece
+- Skip links, landmarks, live regions para anuncios dinámicos
 
-## Accesibilidad (WCAG 2.2 AA)
+**Diseño sistemático**
+- Paleta propia: verde confianza, naranja hogar, azul seguimiento
+- Componentes que se repiten: 4 tipos de botón, cards, chips, inputs, switches, bottom nav
+- Tipografía con personalidad: Fredoka (títulos) + Work Sans (lectura)
+- Phone frame en desktop, full-screen en móvil — sin breakpoint roto
 
-- Contraste ≥ 4.5:1 en textos
-- Navegación 100% por teclado (focus visible, skip links)
-- Áreas táctiles ≥ 44px
-- ARIA labels, roles, live regions
-- `prefers-reduced-motion` respetado
-- Semántica HTML correcta (landmarks, headings, forms)
+**Interacciones que importan**
+- Toggle contraseña (ojo que abre/cierra)
+- Validación inline con foco automático al primer error
+- Chat demo funcional (escribe, envía, ve burbujas propias/ajenas)
+- Likes en momentos (corazón que late)
+- Cancelar solicitud con animación + anuncio a screen readers
+- Todo en **vanilla JS** — cero dependencias, cero build, abre y corre
 
-## Diseño
+---
 
-- Paleta institucional: verde bosque (#2E7D32), naranja cálido (#F57C00), azul cielo (#2196F3)
-- Componentes reutilizables: botones (4 variantes), cards, chips, inputs, bottom nav, switches
-- Responsive: phone frame en desktop, full-screen en móvil ≤ 460px
+## Equipo
 
-## Cómo probar
+| Rol | Nombre | Qué hizo |
+|-----|--------|----------|
+| **Product & UX** | *Tu nombre* | Definición del flujo, arquitectura de información, criterios de adopción responsable |
+| **UI & Design System** | *Tu nombre* | Paleta, tipografía, componentes, estados, dark mode (preparado), iconografía |
+| **Frontend & Accesibilidad** | *Tu nombre* | HTML semántico, CSS custom properties, JS vanilla, testing WCAG 2.2 AA |
+| **Content & Microcopy** | *Tu nombre* | Textos con voz humana, mensajes de error que ayudan, empty states que abrazan |
+| **QA & Testing** | *Tu nombre* | Navegación teclado, lectores de pantalla (NVDA/VoiceOver), móvil, desktop, edge cases |
 
-Abrir `index.html` en navegador. Navegación funcional entre todas las pantallas.
+> ¿Equipo de uno? Pon tu nombre en todas. ¿Equipo real? Reemplaza cada "*Tu nombre*" y presúmanlo.
+
+---
+
+## Cómo probarlo en 10 segundos
+
+```bash
+# Opción 1: Doble clic
+abre index.html en tu navegador
+
+# Opción 2: Servidor local (recomendado para fetch/API futuras)
+npx serve .
+# o
+python -m http.server 8080
+```
+
+Navega con **mouse, teclado o lector de pantalla**. Todo funciona.
+
+---
+
+## Próximos pasos (cuando esto deje de ser prototipo)
+
+- [ ] Backend real (Node/Python/Go + DB)
+- [ ] Auth con JWT + refresh tokens
+- [ ] Push notifications (Service Workers)
+- [ ] Geolocalización real + Mapbox/Leaflet
+- [ ] Panel de refugio (gestión mascotas, solicitudes, visitas)
+- [ ] Tests E2E (Playwright) + CI/CD
+- [ ] Deploy (Vercel/Netlify/Cloudflare Pages)
+
+---
+
+**Hecho con paciencia, café y la convicción de que cada adopción cambia dos vidas.** 🐶❤️🐱
