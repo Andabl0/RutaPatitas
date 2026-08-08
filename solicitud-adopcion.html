@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patitas Unidas — Solicitud de adopción</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<div class="phone-frame">
+  <div class="status-bar" aria-hidden="true"><span>9:52</span><span class="dot"></span><span></span></div>
+
+  <main id="main" class="app-screen">
+    <div class="topbar">
+      <a class="btn-back" href="mascota-perfil.html" aria-label="Volver al perfil de la mascota">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <h1>Solicitar adopción</h1>
+    </div>
+
+    <div class="screen-scroll">
+      <div style="display:flex; justify-content:center; margin-bottom:var(--space-5);">
+        <div class="avatar" style="width:96px; height:96px; background:var(--color-primary-tint); color:var(--color-primary-dark);" role="img" aria-label="Foto de Toby">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5c-2 0-4 1.5-4 3.5S10 12 12 12s4-1.5 4-3.5S14 5 12 5z"/><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z"/><path d="M12 6v6l3 3"/></svg>
+        </div>
+      </div>
+
+      <p style="text-align:center; color:var(--color-text-muted); font-size:14px; margin-bottom:var(--space-5);">
+        Completa el formulario para que el refugio te conozca mejor. Te contactarán en 24-48 horas.
+      </p>
+
+      <form data-validate="detalle-adopcion.html" novalidate>
+        <div class="field">
+          <label for="adopter-name">Tu nombre completo</label>
+          <input type="text" id="adopter-name" placeholder="Tu nombre" required autocomplete="name">
+          <p class="error-msg" role="alert" hidden>Escribe tu nombre completo.</p>
+        </div>
+
+        <div class="field">
+          <label for="adopter-email">Correo electrónico</label>
+          <input type="email" id="adopter-email" placeholder="tucorreo@ejemplo.com" required autocomplete="email">
+          <p class="error-msg" role="alert" hidden>Escribe un correo electrónico válido.</p>
+        </div>
+
+        <div class="field">
+          <label for="adopter-phone">Número de teléfono</label>
+          <input type="tel" id="adopter-phone" placeholder="55 1234 5678" required autocomplete="tel">
+          <p class="hint">Para que el refugio te contacte.</p>
+          <p class="error-msg" role="alert" hidden>Escribe un número de teléfono a 10 dígitos.</p>
+        </div>
+
+        <div class="field">
+          <label for="adopter-address">Dirección (colonia, ciudad)</label>
+          <input type="text" id="adopter-address" placeholder="Ej. Roma Norte, CDMX" required>
+          <p class="error-msg" role="alert" hidden>Escribe tu dirección.</p>
+        </div>
+
+        <div class="field">
+          <label for="adopter-home">Tipo de vivienda</label>
+          <select id="adopter-home" required>
+            <option value="">Selecciona una opción</option>
+            <option>Casa con jardín</option>
+            <option>Casa sin jardín</option>
+            <option>Departamento grande</option>
+            <option>Departamento pequeño</option>
+          </select>
+          <p class="error-msg" role="alert" hidden>Selecciona tu tipo de vivienda.</p>
+        </div>
+
+        <div class="field">
+          <label for="adopter-experience">Experiencia con mascotas</label>
+          <select id="adopter-experience" required>
+            <option value="">Selecciona una opción</option>
+            <option>Primera mascota</option>
+            <option>He tenido mascotas antes</option>
+            <option>Experiencia con la raza</option>
+          </select>
+          <p class="error-msg" role="alert" hidden>Selecciona tu nivel de experiencia.</p>
+        </div>
+
+        <div class="field">
+          <label for="adopter-notes">¿Por qué quieres adoptar a Toby?</label>
+          <textarea id="adopter-notes" placeholder="Cuéntanos sobre tu estilo de vida, familia, otros animales en casa..."></textarea>
+          <p class="hint">Ayuda al refugio a saber si es buen match.</p>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="adopter-terms" name="terminos" required>
+          <label for="adopter-terms">Confirmo que tengo más de 18 años y acepto los <a href="#" style="color:var(--color-primary-dark); font-weight:700;">términos de adopción</a>.</label>
+        </div>
+        <p class="error-msg" id="terms-error" role="alert" hidden style="margin:-12px 0 16px;">Debes aceptar los términos para continuar.</p>
+
+        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+      </form>
+    </div>
+
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <a href="buscar-mascotas.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+        Buscar
+      </a>
+      <a href="mis-solicitudes.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        Solicitudes
+      </a>
+      <a href="perfil.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/><circle cx="12" cy="8" r="4"/></svg>
+        Perfil
+      </a>
+    </nav>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

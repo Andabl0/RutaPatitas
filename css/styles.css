@@ -1,6 +1,7 @@
 /* ===========================================================
    PATITAS UNIDAS — Design System
    Paleta institucional + tipografía + componentes reutilizables
+   App de adopción de mascotas
    =========================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
@@ -10,7 +11,7 @@
   --color-primary: #2E7D32;       /* Verde bosque — confianza, naturaleza */
   --color-primary-dark: #1B5E20;  /* hover / pressed */
   --color-primary-tint: #E8F5E9;  /* fondos suaves, chips de éxito */
-  --color-secondary: #F57C00;     /* Naranja cálido — calidez */
+  --color-secondary: #F57C00;     /* Naranja cálido — calidez, hogar */
   --color-secondary-dark: #E65100;
   --color-secondary-tint: #FFF3E0;
   --color-accent: #2196F3;        /* Azul cielo — seguimiento / foco */
@@ -712,8 +713,8 @@ input:focus, textarea:focus, select:focus { border-color: var(--color-accent); }
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.role-card.role-owner .role-icon { background: var(--color-primary-tint); color: var(--color-primary-dark); }
-.role-card.role-sitter .role-icon { background: var(--color-secondary-tint); color: var(--color-secondary-dark); }
+.role-card.role-adopt .role-icon { background: var(--color-primary-tint); color: var(--color-primary-dark); }
+.role-card.role-foster .role-icon { background: var(--color-secondary-tint); color: var(--color-secondary-dark); }
 .role-card .role-text .title { font-weight: 700; font-size: 15.5px; }
 .role-card .role-text .sub { font-size: 12.5px; color: var(--color-text-muted); }
 
