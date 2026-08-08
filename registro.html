@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patitas Unidas — Registro</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<div class="phone-frame">
+  <div class="status-bar" aria-hidden="true"><span>9:52</span><span class="dot"></span><span></span></div>
+
+  <main id="main" class="app-screen">
+    <div class="screen-scroll">
+      <div class="topbar" style="padding-left:0; padding-right:0;">
+        <a class="btn-back" href="index.html" aria-label="Volver al inicio">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="brand" style="margin-top:0;">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="7" r="2.2"/><circle cx="12" cy="4.8" r="2.2"/><circle cx="17" cy="7" r="2.2"/><path d="M12 10.5c-3.6 0-6.4 2.3-6.4 5 0 1.9 1.7 3 3.7 2.4.9-.3 1.8-.4 2.7-.4s1.8.1 2.7.4c2 .6 3.7-.5 3.7-2.4 0-2.7-2.8-5-6.4-5z"/></svg>
+        </div>
+      </div>
+      <h1 style="font-size:24px; text-align:center; margin-bottom:var(--space-5);">Crear cuenta</h1>
+
+      <div class="card" data-success-banner tabindex="-1" role="status" hidden
+        style="padding:var(--space-4); margin-bottom:var(--space-4); background:var(--color-primary-tint); border-color:var(--color-primary);">
+        <strong style="color:var(--color-primary-dark);">¡Cuenta creada!</strong>
+        <p style="font-size:13.5px; margin-top:4px;">Ya puedes <a href="buscar-cuidadores.html" style="color:var(--color-primary-dark); font-weight:700;">explorar cuidadores</a>.</p>
+      </div>
+
+      <form data-validate novalidate>
+        <div class="field">
+          <label for="reg-name">Nombre completo</label>
+          <input type="text" id="reg-name" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+          <p class="error-msg" role="alert" hidden>Escribe tu nombre completo.</p>
+        </div>
+
+        <div class="field">
+          <label for="reg-email">Correo electrónico</label>
+          <input type="email" id="reg-email" name="correo" placeholder="tucorreo@ejemplo.com" required autocomplete="email">
+          <p class="error-msg" role="alert" hidden>Escribe un correo electrónico válido.</p>
+        </div>
+
+        <div class="field">
+          <label for="reg-phone">Número de teléfono</label>
+          <input type="tel" id="reg-phone" name="telefono" placeholder="55 1234 5678" required autocomplete="tel">
+          <p class="hint">Lo usamos solo para coordinar el cuidado de tu mascota.</p>
+          <p class="error-msg" role="alert" hidden>Escribe un número de teléfono a 10 dígitos.</p>
+        </div>
+
+        <div class="field">
+          <label for="reg-pass">Contraseña</label>
+          <input type="password" id="reg-pass" name="password" placeholder="Mínimo 8 caracteres" required minlength="8" autocomplete="new-password">
+          <p class="error-msg" role="alert" hidden>La contraseña debe tener al menos 8 caracteres.</p>
+        </div>
+
+        <div class="field">
+          <label for="reg-pass2">Confirmar contraseña</label>
+          <input type="password" id="reg-pass2" name="password2" placeholder="Repite tu contraseña" required autocomplete="new-password">
+          <p class="error-msg" role="alert" hidden>Las contraseñas deben coincidir.</p>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="reg-terms" name="terminos" required>
+          <label for="reg-terms">Estoy de acuerdo con los <a href="#" style="color:var(--color-primary-dark); font-weight:700;">términos y condiciones</a>.</label>
+        </div>
+        <p class="error-msg" id="terms-error" role="alert" hidden style="margin:-12px 0 16px;">Debes aceptar los términos y condiciones para continuar.</p>
+
+        <button type="submit" class="btn btn-primary">Registrarme</button>
+      </form>
+
+      <p class="form-footer-link">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patitas Unidas — Mapa del sitio (prototipo)</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  body { background: var(--color-bg); padding: var(--space-6) var(--space-4); }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-4); margin-top: var(--space-5); }
+  .grid a {
+    display: block; background: var(--color-surface); border: 1px solid var(--color-border);
+    border-radius: var(--radius-md); padding: var(--space-4); text-decoration: none; color: var(--color-text);
+  }
+  .grid a:hover { border-color: var(--color-primary); background: var(--color-primary-tint); }
+  .grid .step { font-size: 12px; color: var(--color-primary-dark); font-weight: 700; }
+  .grid .name { font-weight: 700; margin-top: 2px; }
+  .grid .desc { font-size: 12.5px; color: var(--color-text-muted); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand" style="align-items:flex-start; margin:0 0 var(--space-2);">
+    <span class="brand-name" style="font-size:26px;">Patitas Unidas</span>
+    <span class="brand-tagline">Mapa del sitio · prototipo interactivo</span>
+  </div>
+  <p style="color:var(--color-text-muted); font-size:14px; max-width:60ch;">
+    Vista de revisión para navegar directamente a cualquier pantalla. Dentro de la app, cada pantalla
+    enlaza a la siguiente de forma natural (botones, tarjetas, menú inferior).
+  </p>
+
+  <h2 style="margin-top:var(--space-6); font-size:15px; color:var(--color-text-muted); text-transform:uppercase; letter-spacing:.04em;">Autenticación</h2>
+  <div class="grid">
+    <a href="index.html"><div class="step">Inicio</div><div class="name">Bienvenida / elegir rol</div><div class="desc">Punto de entrada de la app</div></a>
+    <a href="login.html"><div class="step">Sesión</div><div class="name">Iniciar sesión</div></a>
+    <a href="registro.html"><div class="step">Cuenta</div><div class="name">Registro</div></a>
+  </div>
+
+  <h2 style="margin-top:var(--space-6); font-size:15px; color:var(--color-text-muted); text-transform:uppercase; letter-spacing:.04em;">Dueño de mascota</h2>
+  <div class="grid">
+    <a href="buscar-cuidadores.html"><div class="step">Principal</div><div class="name">Buscar cuidadores</div></a>
+    <a href="cuidador-perfil.html"><div class="step">Detalle</div><div class="name">Perfil de cuidadora</div></a>
+    <a href="agregar-mascota.html"><div class="step">Formulario</div><div class="name">Agregar mascota</div></a>
+    <a href="detalle-solicitud.html"><div class="step">Seguimiento</div><div class="name">Detalle de solicitud + mapa</div></a>
+  </div>
+
+  <h2 style="margin-top:var(--space-6); font-size:15px; color:var(--color-text-muted); text-transform:uppercase; letter-spacing:.04em;">Cuidador</h2>
+  <div class="grid">
+    <a href="solicitudes.html"><div class="step">Bandeja</div><div class="name">Solicitudes recibidas</div></a>
+    <a href="aceptar-solicitud.html"><div class="step">Confirmación</div><div class="name">Aceptar + chat</div></a>
+    <a href="momentos.html"><div class="step">Bitácora</div><div class="name">Momentos compartidos</div></a>
+  </div>
+
+  <h2 style="margin-top:var(--space-6); font-size:15px; color:var(--color-text-muted); text-transform:uppercase; letter-spacing:.04em;">Cuenta</h2>
+  <div class="grid">
+    <a href="perfil.html"><div class="step">Perfil</div><div class="name">Editar datos</div></a>
+    <a href="configuracion.html"><div class="step">Ajustes</div><div class="name">Configuración</div></a>
+  </div>
+</div>
+</body>
+</html>
